@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+.all{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(90%,2fr));
+    grid-gap: 10px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+
+.page{
+    display: flex;
+    padding-left: 100px;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 40px;
+    background-image: url(../IMG/coral.jpg);
+    height: 400px;
+    width: 100%;
+    
+}
+
+h1{
+    margin-top: 140px;
+    text-align: center;
+    font-size: 60px;
+}
+
+h2{
+    font-size: 35px;
+}
+p{
+    font-size: 20px;
+}
+
+.corals{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(90%,2fr));
+    grid-gap: 10px;
+    background-color: rgba(3, 27, 48, 0.808);
+    color: white;
+    padding: 20px;
+    width: 250px;
+    height: 250px;
+}
+
+.images img{
+    display:inline;
+    width: 400px;
+    height: 250px;
+    float: right;
+    margin-right: 150px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgb(36, 72, 97);
+   
+}
+.para2{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 10px 5px black;
+    float: left;
+    padding: 60px;
+    text-align: justify;
+    width: 800px;
+    height: 250px;
+    margin-left: 90px;
+
+}
+
+
+
+.para3{
+    margin: 30px 0 0 90px;
+}
+
+ul{
+    list-style-type: square;
+    margin-left: 120px;
+}
+
+.para4{
+    margin-top: 50px;
+    text-align: center;
+    color:  rgb(14, 100, 175);
+    font-size: 20px;
+}
+
+.top input{
+    padding: 12px;
+    width:200px;
+    font-size: 17px;
+    background: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+    border: white;
+    float: right;
+    border-radius: 5px;
+    color: white;
+    margin-right: 20px;
+}
+
+.top input:hover{
+    background-color: rgb(54, 44, 44);
+}
+
+
+@media only screen and (min-width:768px){
+    .all .page {
+        width: 100%;
+    }
+    
+}
+
+
+@media only screen and (min-width:600px){
+    .corals{
+        width:450px;
+        height: 200px;
+    }
+    
+    
+}
+
+
+

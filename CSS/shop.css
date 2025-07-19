@@ -1,0 +1,264 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+.all{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+   
+}
+
+.shop{
+    height: 80px;
+    width: 70%;
+    background-color: rgb(32, 150, 218);
+    border-radius: 3px;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    margin-top: 150px;
+}
+
+
+.shop .logo{
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+.shop .cart{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 3px;
+    width: 80px;
+}
+
+.shop .cart img{
+    width: 30px;
+}
+
+.cart p{
+    height: 22px;
+    width: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 22px;
+    background-color:rgb(49, 144, 199);
+    color: white;
+}
+
+.cart-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #aaa;
+    border-radius: 3px;
+    margin: 10px 10px;
+}
+
+.box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid rgb(32, 150, 218);
+    border-radius: 5px;
+    padding: 15px;
+    height: 350px;
+    box-shadow:0 5px 10px rgb(98, 103, 105) ;
+}
+
+.box:hover{
+    transform: translate(-5px,-10px) ;
+}
+
+
+.box .img-box{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.images {
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.bottom{
+    margin-top: 20px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 110px;
+}
+
+.box button {
+    width: 100%;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(32, 150, 218);
+    padding: 7px 25px;
+    cursor: pointer;
+    color: white;
+}
+
+.box button:hover{
+    background-color: #333;
+}
+
+.container{
+    display: flex;
+    width: 70%;
+    margin-bottom: 30px;
+}
+#root{
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+.sidebar{
+    width: 50%;
+    border-radius: 5px;
+    background-color: #dadada;
+    margin-left: 20px;
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar .head{
+    background-color:rgb(32, 150, 218);
+    border-radius: 3px;
+    height: 40px;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.sidebar .foot{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0px;
+    padding: 10px 0px;
+    border-top: 1px solid #333;
+}
+
+h2{
+    font-size: 20px;
+    color: rgb(212, 16, 16);
+    padding-bottom: 10px;
+}
+
+.quantity button{
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 0;
+  
+}
+
+.submitbtn{
+    padding: 12px;
+    width:90%;
+    font-size: 17px;
+    background-color: rgb(32, 150, 218);
+    color: white;
+    margin-top: 90px;
+    cursor: pointer;
+    border: white;
+    position: relative;
+    border-radius: 5px;
+
+}
+
+.submitbtn:hover {
+    background-color: rgb(3, 27, 48);
+}
+
+.row-img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border: 1px solid rgb(32, 150, 218);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.rowimg{
+    max-width: 43px;
+    max-height: 43px;
+    border-radius: 50%;
+}
+
+.fa-solid{
+    color: rgb(32, 150, 218);
+}
+
+.fa-trash:hover{
+    cursor: pointer;
+    color: #333;
+}
+
+
+.top input{
+    padding: 12px;
+    width:200px;
+    font-size: 17px;
+    background: rgb(0, 0, 0);
+    margin-bottom: 10px;
+    cursor: pointer;
+    text-align: center;
+    border: white;
+    float: right;
+    border-radius: 5px;
+    color: white;
+    margin-right: 20px;
+    
+}
+
+.top input:hover{
+    background-color: rgb(54, 44, 44);
+}
+
+@media (max-width: 768px) {
+    .shop {
+        width: 90%;
+    }
+    .container {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+    }
+    #root {
+        width: 100%;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    }
+    .sidebar {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+

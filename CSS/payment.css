@@ -1,0 +1,139 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    
+   
+}
+body{
+    background:rgb(16, 94, 158);
+}
+
+.Details{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    padding:100px;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    
+}
+
+.Details form{
+    width: 700px;
+    padding: 40px;
+    background: aliceblue;
+    border-radius: 10px;
+    box-shadow:0 5px 10px black ;
+
+}
+
+form .Box{
+    display: flex;
+    gap:15px;
+    flex-wrap: wrap;
+    
+   
+}
+.Details form .col{
+    flex: 1 1 250px;
+}
+
+h1{
+    font-size: 20px;
+    text-transform:uppercase;
+    padding: 5px;
+    color: #2e2929;
+}
+
+.col .input-text{
+    margin: 15px 0;
+}
+
+.input-text label{
+    display: block;
+
+}
+
+.input-text input{
+    width: 100%;
+    padding:10px 15px;
+    border:1px solid silver;
+    border-radius: 6px;
+    font-size: 15px;
+   
+    
+}
+
+
+.input-text img{
+    width: 250px;
+}
+
+.col .Pcard{
+    display: flex;
+    gap:5px;
+
+}
+
+.Pcard input{
+    cursor: pointer;
+}
+
+.col .line{
+    display: flex;
+    gap:15px;
+   
+
+}
+
+
+.line .input-text{
+    margin-top: 5px;
+}
+
+.btn{
+    display: flex;
+    gap:10px;
+    
+}  
+
+.submitbtn{
+    padding: 12px;
+    width:100%;
+    font-size: 17px;
+    background: rgb(16, 94, 158);
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+    border: white;
+   
+
+}
+
+.resetbtn{
+    padding: 12px;
+    width:100%;
+    font-size: 17px;
+    background: rgb(16, 94, 158);
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+    border: white;
+   
+}
+
+.submitbtn:hover{
+    background: rgb(3, 27, 48);
+}
+.resetbtn:hover{
+    background:rgb(3, 27, 48);
+}
+
+
